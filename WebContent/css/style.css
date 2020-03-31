@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";
+
+/* 共通部分
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+
+html{
+    font-size: 100%;
+    background-color:#fffac2;
+}
+
+body{
+    line-height: 1.7;
+    color: #432;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-size: 36px;
+}
+
+.main-nav{
+    display: flex;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-top: 17px;
+    list-style: none;
+}
+
+.main-nav li{
+    margin-left:25px;
+}
+
+.main-nav a{
+    color: #432;
+}
+
+.main-nav a:hover{
+    color: #0bd;
+}
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.wrapper{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+footer{
+    text-align: center;
+}
+
+.game1-left{
+    display: flex;
+    margin: 5px;
+    text-align: left;
+}
+
+.game1-right{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+    text-align: right;
+}
+
+.g1-enemy{
+    width: 170px;
+    margin-right: 10px
+}
+
+.g1-player{
+    width: 170px;
+    margin-left: 10px;
+
+}
+
+
+.g1-message{
+    flex-direction: column;
+    width: 40%;
+}
+.name-frame{
+    padding-top: 5px;
+    border-style: double;
+
+}
+
+.message-frame{
+    border-style: double;
+    border-width: thick;
+    padding-top: 5px;
+}
+
+
+
