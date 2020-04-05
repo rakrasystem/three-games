@@ -65,7 +65,19 @@ public class Game1Janken extends HttpServlet {
         //変数の登録
         request.setAttribute("gm1", gm1);
 
-        //勝敗に応じたページへ振り分け
+        switch(result){
+            case 0: RequestDispatcher rd0 = request.getRequestDispatcher("/WEB-INF/views/game1/j_draw.jsp");
+                    rd0.forward(request,response);
+                    break;
+            case 1: RequestDispatcher rd1 = request.getRequestDispatcher("/WEB-INF/views/game1/j_win.jsp");
+                    rd1.forward(request, response);
+                    break;
+            case 2: RequestDispatcher rd2 = request.getRequestDispatcher("/WEB-INF/views/game1/j_lose.jsp");
+                    rd2.forward(request, response);
+                    break;
+        }
+
+        /*勝敗に応じたページへ振り分け
         if(result == 0){
             RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/game1/j_draw.jsp");
             rd.forward(request,response);
@@ -76,5 +88,6 @@ public class Game1Janken extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/game1/j_lose.jsp");
             rd.forward(request, response);
         }
+        */
     }
 }

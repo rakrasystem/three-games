@@ -20,8 +20,8 @@
         <p>「スペシャル」：パワーが3以上のとき、すべてのパワーを使って使えます。</p>
         <br />
         <br />
-        <div class="game1-right">
-                <div class="g1-message">
+        <div class="right">
+                <div class="message">
                     <div class="name-frame">
                         <p>ナディア</p>
                     </div>
@@ -33,12 +33,12 @@
                         <p>もう開始からパワーを1つためてあるよ。</p>
                     </div>
                 </div>
-                <img class="g1-player" src="<c:url value='/image/guide01.jpeg' />" alt="ナディア">
+                <img class="player" src="<c:url value='/image/guide01.png' />" alt="ナディア">
             </div>
             <br />
 
-            <div class="game1-right">
-                <div class="g1-message">
+            <div class="right">
+                <div class="message">
                     <div class="name-frame">
                         <p>ナディア</p>
                     </div>
@@ -50,7 +50,7 @@
                         <p>チャージの手間を省くためにパワーを1つためるよ。</p>
                     </div>
                 </div>
-                <img class="g1-player" src="<c:url value='/image/guide01.jpeg' />" alt="ナディア">
+                <img class="player" src="<c:url value='/image/guide01.png' />" alt="ナディア">
             </div>
             <br />
 

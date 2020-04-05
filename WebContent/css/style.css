@@ -60,32 +60,32 @@ footer{
     text-align: center;
 }
 
-.game1-left{
+.left{
     display: flex;
     margin: 5px;
     text-align: left;
 }
 
-.game1-right{
+.right{
     display: flex;
     justify-content: flex-end;
     margin: 5px;
     text-align: right;
 }
 
-.g1-enemy{
-    width: 170px;
+.enemy{
+    width: 17%;
     margin-right: 10px
 }
 
-.g1-player{
-    width: 170px;
+.player{
+    width: 17%;
     margin-left: 10px;
 
 }
 
 
-.g1-message{
+.message{
     flex-direction: column;
     width: 40%;
 }

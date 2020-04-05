@@ -59,6 +59,23 @@ public class Game3Judge extends HttpServlet {
         Integer player = Integer.parseInt(request.getParameter("hand"));
 
         //プレイヤーとアテナのパワーカウントの変更
+
+        switch(player){
+            case 0: gm3.setPlayerP(gm3.getPlayerP() + 1);
+                    break;
+            case 2: gm3.setPlayerP(gm3.getPlayerP() - 1);
+                    break;
+        }
+        switch(athena){
+            case 0: gm3.setAthenaP(gm3.getAthenaP() + 1);
+                break;
+            case 2: gm3.setAthenaP(gm3.getAthenaP() - 1);
+                break;
+            case 3: gm3.setAthenaP(0);
+                break;
+        }
+
+        /*
         if(player == 0){
             gm3.setPlayerP(gm3.getPlayerP() + 1);
         }else if(player == 2){
@@ -71,6 +88,7 @@ public class Game3Judge extends HttpServlet {
         }else if(athena == 3){
             gm3.setAthenaP(0);
         }
+        */
 
       //数値を文字列に変換
         String[] hand = {"チャージ","シールド","アタック","スペシャル"};
@@ -80,12 +98,29 @@ public class Game3Judge extends HttpServlet {
 
         //勝敗の判定
         Integer[][] judge ={{0,0,2,2},{0,0,0,2},{1,0,0,2},{1,1,1,3}};
-        Integer result = judge[player][athena];
+        gm3.setResult(judge[player][athena]);
         String[] link ={"/WEB-INF/views/game3/draw.jsp", "", "", "/WEB-INF/views/game3/draw_s.jsp"};
 
         //結果の振り分け
         request.setAttribute("gm3",gm3);
 
+        switch(gm3.getResult()){
+            case 1: Entrant e1 = (Entrant) request.getSession().getAttribute("login_player");
+                    gm3.recordGame3(gm3, e1);
+                    RequestDispatcher rd1 = request.getRequestDispatcher("/WEB-INF/views/game3/win.jsp");
+                    rd1.forward(request, response);
+                    break;
+            case 2: Entrant e2 = (Entrant) request.getSession().getAttribute("login_player");
+                    gm3.recordGame3(gm3, e2);
+                    RequestDispatcher rd2 = request.getRequestDispatcher("/WEB-INF/views/game3/lose.jsp");
+                    rd2.forward(request, response);
+                    break;
+            default: RequestDispatcher rd3 = request.getRequestDispatcher(link[gm3.getResult()]);
+                    rd3.forward(request, response);
+                    break;
+        }
+
+        /*
         if(result == 1){
             Entrant e = (Entrant) request.getSession().getAttribute("login_player");
             gm3.recordGame3(gm3, e);
@@ -100,5 +135,6 @@ public class Game3Judge extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher(link[result]);
             rd.forward(request, response);
         }
+        */
     }
 }

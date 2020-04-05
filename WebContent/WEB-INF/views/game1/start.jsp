@@ -4,9 +4,9 @@
     <c:param name="content">
         <h1>あっちむいてほい</h1>
         <br /><br/>
-            <div class="game1-left">
-                <img  class="g1-enemy" src="<c:url value='/image/game1.jpeg' />" alt="メリッサ">
-                <div class="g1-message">
+            <div class="left">
+                <img  class="enemy" src="<c:url value='/image/game1.png' />" alt="メリッサ">
+                <div class="message">
                     <div class="name-frame">
                         <p>メリッサ</p>
                     </div>
@@ -22,8 +22,8 @@
 
             <br />
 
-            <div class="game1-right">
-                <div class="g1-message">
+            <div class="right">
+                <div class="message">
                     <div class="name-frame">
                         <p>ナディア</p>
                     </div>
@@ -35,14 +35,14 @@
                         <p>じゃーんけーん……</p>
                     </div>
                 </div>
-                <img class="g1-player" src="<c:url value='/image/guide01.jpeg' />" alt="ナディア">
+                <img class="player" src="<c:url value='/image/guide01.png' />" alt="ナディア">
             </div>
             <br />
 
-            <div class="game1-right">
-                <div class="g1-message">
+            <div class="right">
+                <div class="message">
                     <div class="name-frame">
-                        <p>${sessionScope.login_player.name }</p>
+                        <p>${sessionScope.login_player.name}</p>
                     </div>
                     <div class="message-frame">
                         <p>なにを出そうかな……？</p>
@@ -61,7 +61,8 @@
                         <br />
                     </div>
                 </div>
-                <img class="g1-player" src="<c:url value='/image/player01.jpeg' />" alt="プレイヤー">
+                <img class="player" src="<c:url value='/image/player01.png' />" alt="プレイヤー">
             </div>
+            <br />
     </c:param>
 </c:import>

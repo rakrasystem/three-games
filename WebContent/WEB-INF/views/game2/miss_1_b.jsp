@@ -5,9 +5,9 @@
         <h1>フィンガースマッシュ</h1>
         <br /><br/>
 
-            <div class="game1-left">
-                <img  class="g1-enemy" src="<c:url value='/image/game2.jpeg' />" alt="テティス">
-                <div class="g1-message">
+            <div class="left">
+                <img  class="enemy" src="<c:url value='/image/game2.png' />" alt="テティス">
+                <div class="message">
                     <div class="name-frame">
                         <p>テティス  :  ユニット数 ${sm.cpuUnit}</p>
                     </div>
@@ -22,8 +22,8 @@
             </div>
             <br />
 
-            <div class="game1-right">
-                <div class="g1-message">
+            <div class="right">
+                <div class="message">
                     <div class="name-frame">
                         <p>${sessionScope.login_player.name}  :  ユニット数 ${sm.playerUnit }  </p>
                     </div>
@@ -34,12 +34,12 @@
                         <br />
                     </div>
                 </div>
-                <img class="g1-player" src="<c:url value='/image/player01.jpeg' />" alt="プレイヤー">
+                <img class="player" src="<c:url value='/image/player01.png' />" alt="プレイヤー">
             </div>
             <br />
 
-            <div class="game1-right">
-                <div class="g1-message">
+            <div class="right">
+                <div class="message">
                     <div class="name-frame">
                         <p>ナディア</p>
                     </div>
@@ -51,13 +51,13 @@
                         <p>あなたが攻撃側だよ。立てる指の数と、宣言する数を選んでね！</p>
                     </div>
                 </div>
-                <img class="g1-player" src="<c:url value='/image/guide01.jpeg' />" alt="ナディア">
+                <img class="player" src="<c:url value='/image/guide01.png' />" alt="ナディア">
             </div>
             <br />
 
-            <div class="game1-left">
-                <img  class="g1-enemy" src="<c:url value='/image/game2.jpeg' />" alt="テティス">
-                <div class="g1-message">
+            <div class="left">
+                <img  class="enemy" src="<c:url value='/image/game2.png' />" alt="テティス">
+                <div class="message">
                     <div class="name-frame">
                         <p>テティス  :  ユニット ${sm.cpuUnit} </p>
                     </div>
@@ -72,8 +72,8 @@
             </div>
             <br />
 
-            <div class="game1-right">
-                <div class="g1-message">
+            <div class="right">
+                <div class="message">
                     <div class="name-frame">
                         <p>${sessionScope.login_player.name}  :  ユニット ${sm.playerUnit }  </p>
                     </div>
@@ -121,7 +121,7 @@
                             </form>
                     </div>
                 </div>
-                <img class="g1-player" src="<c:url value='/image/player01.jpeg' />" alt="プレイヤー">
+                <img class="player" src="<c:url value='/image/player01.png' />" alt="プレイヤー">
             </div>
             <br />
 

@@ -5,8 +5,8 @@
     <br />
     <br />
     <br />
-     <div class="game1-right">
-                <div class="g1-message">
+     <div class="right">
+                <div class="message">
                     <div class="name-frame">
                         <p>ナディア</p>
                     </div>
@@ -17,13 +17,13 @@
                         <p>上のメニューか、みんなとの会話から、ゲームができるよ。</p>
                     </div>
                 </div>
-                <img class="g1-player" src="<c:url value='/image/guide01.jpeg' />" alt="ナディア">
+                <img class="player" src="<c:url value='/image/guide01.png' />" alt="ナディア">
             </div>
             <br />
 
-        <div class="game1-left">
-                <img  class="g1-enemy" src="<c:url value='/image/game1.jpeg' />" alt="メリッサ">
-                <div class="g1-message">
+        <div class="left">
+                <img  class="enemy" src="<c:url value='/image/game1.png' />" alt="メリッサ">
+                <div class="message">
                     <div class="name-frame">
                         <p>メリッサ</p>
                     </div>
@@ -38,8 +38,8 @@
             </div>
             <br />
 
-            <div class="game1-right">
-                <div class="g1-message">
+            <div class="right">
+                <div class="message">
                     <div class="name-frame">
                         <p>テティス</p>
                     </div>
@@ -51,13 +51,13 @@
                         <br />
                     </div>
                 </div>
-                <img class="g1-player" src="<c:url value='/image/game2.jpeg' />" alt="テティス">
+                <img class="player" src="<c:url value='/image/game2.png' />" alt="テティス">
             </div>
             <br />
 
-            <div class="game1-left">
-                <img  class="g1-enemy" src="<c:url value='/image/game3.jpeg' />" alt="アテナ">
-                <div class="g1-message">
+            <div class="left">
+                <img  class="enemy" src="<c:url value='/image/game3.png' />" alt="アテナ">
+                <div class="message">
                     <div class="name-frame">
                         <p>アテナ</p>
                     </div>

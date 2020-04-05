@@ -86,7 +86,6 @@ public class Game1Direction extends HttpServlet {
         //変数の登録
         request.setAttribute("gm1", gm1);
 
-
         //決着がついた場合、戦績登録へ振り分け
         if(gm1.getCount() == 2){
             Entrant e = (Entrant) request.getSession().getAttribute("login_player");

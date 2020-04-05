@@ -6,9 +6,9 @@
     <c:param name="content">
         <h1>フィンガースマッシュ</h1>
         <br /><br/>
-            <div class="game1-left">
-                <img  class="g1-enemy" src="<c:url value='/image/game2.jpeg' />" alt="テティス">
-                <div class="g1-message">
+            <div class="left">
+                <img  class="enemy" src="<c:url value='/image/game2.png' />" alt="テティス">
+                <div class="message">
                     <div class="name-frame">
                         <p>テティス</p>
                     </div>
@@ -24,8 +24,8 @@
 
             <br />
 
-            <div class="game1-right">
-                <div class="g1-message">
+            <div class="right">
+                <div class="message">
                     <div class="name-frame">
                         <p>ナディア</p>
                     </div>
@@ -37,12 +37,12 @@
                         <p>立てる指の数と、宣言する指の数を決めてね。</p>
                     </div>
                 </div>
-                <img class="g1-player" src="<c:url value='/image/guide01.jpeg' />" alt="ナディア">
+                <img class="player" src="<c:url value='/image/guide01.png' />" alt="ナディア">
             </div>
             <br />
 
-            <div class="game1-right">
-                <div class="g1-message">
+            <div class="right">
+                <div class="message">
                     <div class="name-frame">
                         <p>${sessionScope.login_player.name }</p>
                     </div>
@@ -68,7 +68,7 @@
                             </form>
                     </div>
                 </div>
-                <img class="g1-player" src="<c:url value='/image/player01.jpeg' />" alt="プレイヤー">
+                <img class="player" src="<c:url value='/image/player01.png' />" alt="プレイヤー">
             </div>
             <br />
 

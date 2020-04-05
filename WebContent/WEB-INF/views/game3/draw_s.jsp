@@ -5,15 +5,15 @@
         <h1>ハンドウォーズ</h1>
         <br /><br/>
 
-            <div class="game1-left">
-                <img  class="g1-enemy" src="<c:url value='/image/game3.jpeg' />" alt="アテナ">
-                <div class="g1-message">
+            <div class="left">
+                <img  class="enemy" src="<c:url value='/image/game3.png' />" alt="アテナ">
+                <div class="message">
                     <div class="name-frame">
-                        <p>アテナ  :  パワー ${athenaP}</p>
+                        <p>アテナ  :  パワー ${gm3.athenaP}</p>
                     </div>
                     <div class="message-frame">
                         <br />
-                        <p> ${athena_hand} </p>
+                        <p> ${gm3.athena_hand} </p>
                         <br />
                         <br />
                         <br />
@@ -22,24 +22,24 @@
             </div>
             <br />
 
-            <div class="game1-right">
-                <div class="g1-message">
+            <div class="right">
+                <div class="message">
                     <div class="name-frame">
-                        <p>${sessionScope.login_player.name}  :  パワー ${playerP }  </p>
+                        <p>${sessionScope.login_player.name}  :  パワー ${gm3.playerP }  </p>
                     </div>
                     <div class="message-frame">
                         <br />
-                        <p> ${player_hand} </p>
+                        <p> ${gm3.player_hand} </p>
                         <br />
                         <br />
                     </div>
                 </div>
-                <img class="g1-player" src="<c:url value='/image/player01.jpeg' />" alt="プレイヤー">
+                <img class="player" src="<c:url value='/image/player01.png' />" alt="プレイヤー">
             </div>
             <br />
 
-            <div class="game1-right">
-                <div class="g1-message">
+            <div class="right">
+                <div class="message">
                     <div class="name-frame">
                         <p>ナディア</p>
                     </div>
@@ -52,15 +52,15 @@
 
                     </div>
                 </div>
-                <img class="g1-player" src="<c:url value='/image/guide01.jpeg' />" alt="ナディア">
+                <img class="player" src="<c:url value='/image/guide01.png' />" alt="ナディア">
             </div>
             <br />
 
-            <div class="game1-left">
-                <img  class="g1-enemy" src="<c:url value='/image/game3.jpeg' />" alt="アテナ">
-                <div class="g1-message">
+            <div class="left">
+                <img  class="enemy" src="<c:url value='/image/game3.png' />" alt="アテナ">
+                <div class="message">
                     <div class="name-frame">
-                        <p>アテナ  :  パワー ${athenaP + 1} </p>
+                        <p>アテナ  :  パワー ${gm3.athenaP + 1} </p>
                     </div>
                     <div class="message-frame">
                         <p>せっかくパワーをためたのに……</p>
@@ -73,10 +73,10 @@
             </div>
             <br />
 
-            <div class="game1-right">
-                <div class="g1-message">
+            <div class="right">
+                <div class="message">
                     <div class="name-frame">
-                        <p>${sessionScope.login_player.name}  :  パワー ${playerP + 1}  </p>
+                        <p>${sessionScope.login_player.name}  :  パワー ${gm3.playerP + 1}  </p>
                     </div>
                     <div class="message-frame">
                         <p>結果は引き分けだった。次のアクションを選ぼう</p>
@@ -94,7 +94,7 @@
                             </form>
                     </div>
                 </div>
-                <img class="g1-player" src="<c:url value='/image/player01.jpeg' />" alt="プレイヤー">
+                <img class="player" src="<c:url value='/image/player01.png' />" alt="プレイヤー">
             </div>
             <br />
 
