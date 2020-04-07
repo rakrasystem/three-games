@@ -20,7 +20,11 @@ import javax.persistence.Table;
     @NamedQuery(
             name = "getAllEntrant",
             query = "SELECT e FROM Entrant AS e WHERE e.name = :name"
-            )
+            ),
+    @NamedQuery(
+            name = "checkRegisteredName",
+            query = "SELECT COUNT(e) FROM Entrant AS e WHERE e.name = :name"
+            ),
 })
 
 public class Entrant {
@@ -65,7 +69,7 @@ public class Entrant {
         return name;
     }
 
-    public void setPlayer_name(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 

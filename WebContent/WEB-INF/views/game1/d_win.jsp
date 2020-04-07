@@ -38,7 +38,7 @@
             </div>
             <br />
 
-            <c:import url="/WEB-INF/views/layout/game1_call.jsp" />
+            <c:import url="/WEB-INF/views/layout/game1_jan.jsp" />
 
     </c:param>
 </c:import>

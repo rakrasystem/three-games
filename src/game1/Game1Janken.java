@@ -76,18 +76,5 @@ public class Game1Janken extends HttpServlet {
                     rd2.forward(request, response);
                     break;
         }
-
-        /*勝敗に応じたページへ振り分け
-        if(result == 0){
-            RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/game1/j_draw.jsp");
-            rd.forward(request,response);
-        }else if(result == 1){
-            RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/game1/j_win.jsp");
-            rd.forward(request, response);
-        }else if(result == 2){
-            RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/game1/j_lose.jsp");
-            rd.forward(request, response);
-        }
-        */
     }
 }

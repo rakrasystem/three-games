@@ -41,11 +41,9 @@ public class CreateNewEntrant extends HttpServlet {
 
             Entrant e = new Entrant();
 
-            e.setPlayer_name(request.getParameter("name"));
+            e.setName(request.getParameter("name"));
             e.setPassword(EncryptUtil.getPasswordEncrypt(
                     request.getParameter("password"),(String)this.getServletContext().getAttribute("salt")));
-
-
             List<String> errors = EntrantValidators.validate(e,true,true);
             if(errors.size() > 0){
                 em.close();
@@ -62,9 +60,10 @@ public class CreateNewEntrant extends HttpServlet {
                 em.getTransaction().commit();
                 em.close();
                 request.getSession().setAttribute("flush", "登録が完了しました。");
-                response.sendRedirect(request.getContextPath() + "/index");
+                response.sendRedirect(request.getContextPath() + "/employees/index");
             }
         }
+
     }
 }
 

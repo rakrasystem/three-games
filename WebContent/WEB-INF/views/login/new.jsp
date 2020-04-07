@@ -13,7 +13,7 @@
             </div>
         </c:if>
         <label for="name">名前</label><br />
-        <input type="text" name="name" value="${employee.name}" />
+        <input type="text" name="name" value="${entrant.name}" />
         <br /><br />
 
         <label for="password">パスワード</label><br />

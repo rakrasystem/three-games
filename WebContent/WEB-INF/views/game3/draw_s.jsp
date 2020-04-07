@@ -80,15 +80,15 @@
                     </div>
                     <div class="message-frame">
                         <p>結果は引き分けだった。次のアクションを選ぼう</p>
-                            <form name="charge" method="GET" action="<c:url value='/game3/judge' />">
+                            <form name="charge" method="POST" action="<c:url value='/game3/judge' />">
                                 <input type="hidden" name="hand" value="0">
                                 <a href="javascript:charge.submit()">チャージを選ぶ</a>
                             </form>
-                            <form name="attack" method="GET" action="<c:url value='/game3/judge' />">
+                            <form name="attack" method="POST" action="<c:url value='/game3/judge' />">
                                 <input type="hidden" name="hand" value="2">
                                 <a href="javascript:attack.submit()">アタックを選ぶ</a>
                             </form>
-                            <form name="shield" method="GET" action="<c:url value='/game3/judge' />">
+                            <form name="shield" method="POST" action="<c:url value='/game3/judge' />">
                                 <input type="hidden" name="hand" value="1">
                                 <a href="javascript:shield.submit()">シールドを選ぶ</a>
                             </form>

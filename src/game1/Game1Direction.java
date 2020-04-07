@@ -48,7 +48,7 @@ public class Game1Direction extends HttpServlet {
         }
 
         //攻撃側の判別 0=プレイヤー 1=メリッサ
-        Integer a = Integer.parseInt(request.getParameter("a"));
+        Integer turn = Integer.parseInt(request.getParameter("turn"));
 
         //メリッサの宣言する方向の生成
         Random rnd = new  Random();
@@ -73,9 +73,9 @@ public class Game1Direction extends HttpServlet {
         gm1.setPlayer(direction[hand]);
 
         //カウントの判定
-        if(judge == 0 && a == 0){
+        if(judge == 0 && turn == 0){
             gm1.setCount(gm1.getCount() + 1);
-        }else if(judge == 0 && a == 1){
+        }else if(judge == 0 && turn == 1){
             gm1.setMelissaCount(gm1.getMelissaCount() + 1);
         }
 
@@ -98,7 +98,7 @@ public class Game1Direction extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/game1/result_b.jsp");
             rd.forward(request,response);
         }else{
-            RequestDispatcher rd = request.getRequestDispatcher(result[a][judge]);
+            RequestDispatcher rd = request.getRequestDispatcher(result[turn][judge]);
             rd.forward(request, response);
         }
     }

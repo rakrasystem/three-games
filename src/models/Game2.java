@@ -13,6 +13,7 @@ public class Game2 {
     private Integer cpuHand;
     private Integer turn;     //0 = 自分ターン 1 = 相手ターン
 
+    //DBに戦績登録するメソッド
     public void recordGame2(Game2 sm, Entrant e){
         EntityManager em = DBUtil.createEntityManager();
         e = em.createNamedQuery("getAllEntrant", Entrant.class)
