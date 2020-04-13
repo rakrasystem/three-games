@@ -18,45 +18,46 @@
         <p>「アタック」  ：パワーを1つ消費して攻撃します。</p>
         <p>「シールド」  ：攻撃を防ぎます。パワーは変わりません。</p>
         <p>「スペシャル」：パワーが3以上のとき、すべてのパワーを使って使えます。</p>
-        <br />
-        <br />
+        <br>
+        <br>
+
         <div class="right">
-                <div class="message">
-                    <div class="name-frame">
-                        <p>ナディア</p>
-                    </div>
-                    <div class="message-frame">
-                        <p>Three Gamesだけの特別ルールがあるよ。</p>
-                        <p>1.最初からお互いにパワーが１つたまっているよ。</p>
-                        <p>パワーがないとアタックできないからね。</p>
-                        <p>そうなると、最初はチャージで決まりだから、</p>
-                        <p>もう開始からパワーを1つためてあるよ。</p>
-                    </div>
-                </div>
-                <img class="player" src="<c:url value='/image/guide01.png' />" alt="ナディア">
+          <div class="character-right">
+            <img class="player" src="image/guide01.png" alt="ナディア">
+          </div>
+          <div class="message-right">
+            <div class="name-frame">
+              <p>ナディア</p>
             </div>
-            <br />
-
-            <div class="right">
-                <div class="message">
-                    <div class="name-frame">
-                        <p>ナディア</p>
-                    </div>
-                    <div class="message-frame">
-                        <p>2つ目の特別ルールだよ。</p>
-                        <p>2.スペシャルで引き分けると、パワーが1つたまるよ。</p>
-                        <p>これも、特別ルール1と同じ理由だよ。</p>
-                        <p>お互いにパワーが0になっちゃうから、次のターンの</p>
-                        <p>チャージの手間を省くためにパワーを1つためるよ。</p>
-                    </div>
-                </div>
-                <img class="player" src="<c:url value='/image/guide01.png' />" alt="ナディア">
+            <div class="message-frame">
+              <p>Three Gamesだけの特別ルールがあるよ。</p>
+              <p>1.最初からお互いにパワーが１つたまっているよ。</p>
+              <p>パワーがないとアタックできないからね。</p>
+              <p>そうなると、最初はチャージで決まりだから、もう開始からパワーを1つためてあるよ。</p>
             </div>
-            <br />
+          </div>
+        </div>
+        <br>
 
-
-
-        <br /><br/>
+          <div class="right">
+            <div class="character-right">
+              <img class="player" src="image/guide01.png" alt="ナディア">
+            </div>
+            <div class="message-right">
+              <div class="name-frame">
+                <p>ナディア</p>
+              </div>
+              <div class="message-frame">
+                <p>2つ目の特別ルールだよ。</p>
+                <p>2.スペシャルで引き分けると、パワーが1つたまるよ。</p>
+                <p>これも、特別ルール1と同じ理由だよ。</p>
+                <p>お互いにパワーが0になっちゃうから、次のターンのチャージの手間を省くためにパワーを1つためるよ。</p>
+              </div>
+            </div>
+          </div>
+          <br>
+        <br>
+        <br>
 
         <a href="<c:url value='/game3/start' />">ゲームを始める！</a>
         <a href="<c:url value='/' />">トップページへ戻る</a>

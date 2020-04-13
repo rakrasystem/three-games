@@ -1,30 +1,22 @@
 @CHARSET "UTF-8";
 
-/* 共通部分
-ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
-
 html{
     font-size: 100%;
     background-color:#fffac2;
 }
-
 body{
     line-height: 1.7;
     color: #432;
 }
-
 a{
     text-decoration: none;
 }
-
 img{
     max-width: 100%;
 }
-
 h1{
     font-size: 36px;
 }
-
 .main-nav{
     display: flex;
     font-size: 1.1rem;
@@ -32,25 +24,19 @@ h1{
     margin-top: 17px;
     list-style: none;
 }
-
 .main-nav li{
     margin-left:25px;
 }
-
 .main-nav a{
     color: #432;
 }
-
 .main-nav a:hover{
     color: #0bd;
 }
-
 .page-header{
     display: flex;
     justify-content: space-between;
-
 }
-
 .wrapper{
     max-width: 90%;
     margin: 0 auto;
@@ -59,47 +45,47 @@ h1{
 footer{
     text-align: center;
 }
-
 .left{
     display: flex;
     margin: 5px;
     text-align: left;
-}
+    width: 100%;
+    height: 200px;
 
+}
 .right{
     display: flex;
-    justify-content: flex-end;
     margin: 5px;
     text-align: right;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 200px;
 }
-
-.enemy{
-    width: 17%;
-    margin-right: 10px
+.character-right{
+    width: 15%;
+    margin-right:20px;
 }
-
-.player{
-    width: 17%;
-    margin-left: 10px;
-
-}
-
-
-.message{
+.message-right{
     flex-direction: column;
-    width: 40%;
+    margin-right: 5px;
+    width: 70%;
+}
+.character-left{
+    width: 15%;
+    margin-left:20px;
+}
+.message-left{
+    flex-direction: column;
+    margin-left: 5px;
+    width: 70%;
 }
 .name-frame{
-    padding-top: 5px;
+    height: 2rem;
     border-style: double;
-
 }
-
 .message-frame{
     border-style: double;
     border-width: thick;
-    padding-top: 5px;
+    margin-top: 10px;
+    height: 75%;
 }
-
-
-

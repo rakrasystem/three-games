@@ -4,34 +4,39 @@
 <h1>あっちむいてほい</h1>
         <br /><br/>
 
-            <div class="left">
-                <img  class="enemy" src="<c:url value='/image/game1.png' />" alt="メリッサ">
-                <div class="message">
-                    <div class="name-frame">
-                        <p>メリッサ  :  カウント ${gm1.melissaCount}</p>
-                    </div>
-                    <div class="message-frame">
-                        <br />
-                        <p>${gm1.melissa }</p>
-                        <br />
-                        <br />
-                        <br />
-                    </div>
-                </div>
+        <div class="left">
+          <div class="character-left">
+            <img  class="enemy" src="<c:url value='/image/game1.png' />" alt="メリッサ">
+          </div>
+          <div class="message-left">
+            <div class="name-frame">
+              <p>メリッサ  :  カウント ${gm1.melissaCount}</p>
             </div>
-            <br />
+            <div class="message-frame">
+              <br>
+              <p>${gm1.melissa }</p>
+              <br>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+        <br>
 
-            <div class="right">
-                <div class="message">
-                    <div class="name-frame">
-                        <p>${sessionScope.login_player.name}  :  カウント ${gm1.count }  </p>
-                    </div>
-                    <div class="message-frame">
-                        <br />
-                        <p>${gm1.player} </p>
-                        <br /><br />
-                    </div>
-                </div>
-                <img class="player" src="<c:url value='/image/player01.png' />" alt="プレイヤー">
+        <div class="right">
+          <div class="character-right">
+            <img class="player" src="<c:url value='/image/player01.png' />" alt="プレイヤー">
+          </div>
+          <div class="message-right">
+            <div class="name-frame">
+              <p>${sessionScope.login_player.name}  :  カウント ${gm1.count }</p>
             </div>
-            <br />
+            <div class="message-frame">
+              <br>
+              <p>${gm1.player} </p>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+        <br>
