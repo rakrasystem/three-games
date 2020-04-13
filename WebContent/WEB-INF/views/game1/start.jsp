@@ -27,7 +27,7 @@
 
           <div class="right">
             <div class="character-right">
-              <img class="player" src="image/guide01.png" alt="ナディア">
+              <img class="player" src="/image/guide01.png" alt="ナディア">
             </div>
             <div class="message-right">
               <div class="name-frame">
@@ -70,6 +70,6 @@
               </div>
             </div>
             <br>
-              
+
     </c:param>
 </c:import>

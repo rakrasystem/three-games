@@ -25,24 +25,26 @@
         <br>
 
             <div class="right">
-                <div class="message">
-                    <div class="name-frame">
-                        <p>${sessionScope.login_player.name}  :  ユニット数 ${sm.playerUnit }  </p>
-                    </div>
-                    <div class="message-frame">
-                        <br />
-                        <p>立てた指の数 : ${sm.playerHand} </p>
-                        <br />
-                        <br />
-                    </div>
-                </div>
-                <img class="player" src="<c:url value='/image/player01.png' />" alt="プレイヤー">
+            <div class="character-right">
+              <img class="player" src="<c:url value='/image/player01.png' />" alt="プレイヤー">
             </div>
-            <br />
+            <div class="message-right">
+              <div class="name-frame">
+                <p>${sessionScope.login_player.name}  :  ユニット数 ${sm.playerUnit}  </p>
+              </div>
+              <div class="message-frame">
+                <br>
+                <p>立てた指の数 : ${sm.playerHand} </p>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+          <br>
 
             <div class="right">
               <div class="character-right">
-                <img class="player" src="image/guide01.png" alt="ナディア">
+                <img class="player" src="/image/guide01.png" alt="ナディア">
               </div>
               <div class="message-right">
                 <div class="name-frame">
